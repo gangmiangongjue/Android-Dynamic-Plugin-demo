@@ -1,0 +1,7 @@
+this project shows how to load dex and so file at runtime , use java reflect method to process dex
+
+you can use gradle assembleRelease task to build a aar file,then unzip the aar, use the dx(or dx.bat) to transfer jar to dex,then remove the testdepence module in setting.gradle,add dynamic method to load methods in dex and so,recompile and enjoy it
+
+这个工程展示了如何在运行期加载dex和so库
+
+首先，你可以用 assembleRelease 这个gradle task构建出aar文件，然后解压缩，用dx工具将里边的jar转换为dex，然后在setting.gradle里边把testdepence这个module去掉，然后加一些动态调用的代码加载dex和so就好了。
